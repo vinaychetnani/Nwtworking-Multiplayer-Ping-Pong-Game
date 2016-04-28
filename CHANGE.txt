@@ -1,0 +1,26 @@
+This file contains all the deviations we have made from our initial design.
+
+
+
+
+Firstly, we have made a new table, 'votes_store'. This table stores all the votes by all the users for all the complaints.
+
+This table consists of three fields - 
+- Complaint ID
+- Table Name
+- User name.
+
+
+
+This table can be checked to know whether a user has already voted for the particular complaint or not.
+
+
+New APIs that we have used are -
+
+- /project/insert.php
+2 --> To keep the track of users voting on the complaints and to ensure that same user does not vote twice on same problem.
+
+-/project/check_votes.php
+
+
+ --> Before upvoting/downvoting it will check if that user has voted for that complaint before.
